@@ -1,0 +1,6 @@
+@nrsdev_langapp_api_HostAddress = http://localhost:5030
+
+GET {{nrsdev_langapp_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

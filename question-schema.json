@@ -1,0 +1,342 @@
+[
+  {
+    "question": "わたし ___ がくせいです。",
+    "tested-abilities": [
+      "particles",
+      "copula",
+      "self-introduction"
+    ],
+    "correct-answer-index": 0,
+    "choices": [
+      "は",
+      "を",
+      "に",
+      "で",
+      "と",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "これは ___ ですか。",
+    "tested-abilities": [
+      "asking-questions",
+      "demonstratives",
+      "basic-sentence-structure"
+    ],
+    "correct-answer-index": 2,
+    "choices": [
+      "どこ",
+      "だれ",
+      "なん",
+      "いつ",
+      "いくら",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "毎日 7時 ___ おきます。",
+    "tested-abilities": [
+      "time-expressions",
+      "particles",
+      "daily-routines"
+    ],
+    "correct-answer-index": 1,
+    "choices": [
+      "を",
+      "に",
+      "で",
+      "から",
+      "へ",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "日本語 ___ べんきょうします。",
+    "tested-abilities": [
+      "object-particle",
+      "study-verbs",
+      "language-vocabulary"
+    ],
+    "correct-answer-index": 2,
+    "choices": [
+      "が",
+      "に",
+      "を",
+      "へ",
+      "と",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "どこ ___ 来ましたか。",
+    "tested-abilities": [
+      "asking-origin",
+      "particles",
+      "question-words"
+    ],
+    "correct-answer-index": 3,
+    "choices": [
+      "を",
+      "に",
+      "へ",
+      "から",
+      "で",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "きょうは ___ です。",
+    "tested-abilities": [
+      "days-of-week",
+      "basic-vocabulary",
+      "reading-comprehension"
+    ],
+    "correct-answer-index": 1,
+    "choices": [
+      "りんご",
+      "月曜日",
+      "学生",
+      "二人",
+      "先生",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "今何さいですか。",
+    "tested-abilities": [
+      "stating-age",
+      "asking-questions",
+      "basic-kanji"
+    ],
+    "correct-answer-index": 2,
+    "choices": [
+      "今は23時です",
+      "29せいです",
+      "34さいです",
+      "34円です",
+      "わたしです",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "わたしのたんじょうびは 5月3日 ___。",
+    "tested-abilities": [
+      "dates",
+      "copula",
+      "basic-sentence-structure"
+    ],
+    "correct-answer-index": 0,
+    "choices": [
+      "です",
+      "ます",
+      "でした",
+      "ません",
+      "では",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "コーヒー ___ のみます。",
+    "tested-abilities": [
+      "object-particle",
+      "food-and-drink",
+      "verbs"
+    ],
+    "correct-answer-index": 1,
+    "choices": [
+      "が",
+      "を",
+      "に",
+      "で",
+      "から",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "あした 学校へ ___。",
+    "tested-abilities": [
+      "movement-verbs",
+      "future-time",
+      "daily-life-vocabulary"
+    ],
+    "correct-answer-index": 4,
+    "choices": [
+      "たべます",
+      "ねます",
+      "みます",
+      "ききます",
+      "いきます",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "その本は ___ の本ですか。",
+    "tested-abilities": [
+      "possessives",
+      "asking-questions",
+      "particles"
+    ],
+    "correct-answer-index": 3,
+    "choices": [
+      "どれ",
+      "どこ",
+      "いつ",
+      "だれ",
+      "なに",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "わたしは日本語と英語 ___ はなします。",
+    "tested-abilities": [
+      "listing-items",
+      "particles",
+      "languages"
+    ],
+    "correct-answer-index": 1,
+    "choices": [
+      "を",
+      "が",
+      "で",
+      "へ",
+      "まで",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "ねこが ___ います。",
+    "tested-abilities": [
+      "existence-verbs",
+      "location-vocabulary",
+      "basic-sentences"
+    ],
+    "correct-answer-index": 2,
+    "choices": [
+      "おいしい",
+      "大きい",
+      "そこに",
+      "三さい",
+      "のみます",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "今日はとても ___ です。",
+    "tested-abilities": [
+      "i-adjectives",
+      "weather",
+      "basic-vocabulary"
+    ],
+    "correct-answer-index": 0,
+    "choices": [
+      "あつい",
+      "あつく",
+      "あつかった",
+      "あつさ",
+      "あつくて",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "りんごを ___ たべます。",
+    "tested-abilities": [
+      "adverbs",
+      "basic-vocabulary",
+      "sentence-comprehension"
+    ],
+    "correct-answer-index": 4,
+    "choices": [
+      "どこ",
+      "いつ",
+      "だれ",
+      "なに",
+      "よく",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "本はつくえの ___ あります。",
+    "tested-abilities": [
+      "location-expressions",
+      "existence-verbs",
+      "particles"
+    ],
+    "correct-answer-index": 1,
+    "choices": [
+      "したを",
+      "うえに",
+      "まえを",
+      "なかを",
+      "よこを",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "わたしは学生では ___。",
+    "tested-abilities": [
+      "negative-copula",
+      "basic-grammar",
+      "self-introduction"
+    ],
+    "correct-answer-index": 3,
+    "choices": [
+      "です",
+      "ました",
+      "でした",
+      "ありません",
+      "なります",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "___ を見ますか。",
+    "tested-abilities": [
+      "question-words",
+      "object-particle",
+      "verbs"
+    ],
+    "correct-answer-index": 2,
+    "choices": [
+      "どこ",
+      "だれ",
+      "なに",
+      "いつ",
+      "いくつ",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "きのう えいがを ___。",
+    "tested-abilities": [
+      "past-tense",
+      "verbs",
+      "time-expressions"
+    ],
+    "correct-answer-index": 0,
+    "choices": [
+      "みました",
+      "みます",
+      "みません",
+      "みたい",
+      "みる",
+      "I don't know"
+    ]
+  },
+  {
+    "question": "日曜日に友だちと ___。",
+    "tested-abilities": [
+      "social-activities",
+      "verb-selection",
+      "daily-life"
+    ],
+    "correct-answer-index": 4,
+    "choices": [
+      "ねます",
+      "のみます",
+      "かいます",
+      "つくります",
+      "あいます",
+      "I don't know"
+    ]
+  }
+]
