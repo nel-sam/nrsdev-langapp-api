@@ -4,3 +4,16 @@ GET {{nrsdev_langapp_api_HostAddress}}/api/questions/jp
 Accept: application/json
 
 ###
+
+POST {{nrsdev_langapp_api_HostAddress}}/api/results
+Content-Type: application/json
+
+{
+    "Results": [
+        {
+            "Question": "What is 'hello' in Japanese?",
+            "CorrectAnswer": "こんにちは",
+            "GivenAnswer": "こんにちわ"
+        }
+    ]
+}

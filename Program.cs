@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Interfaces;
 using Models;
 using Routes;
 using Services;
@@ -11,6 +12,9 @@ builder.Services.AddOpenApi();
 
 // Add core via extension method
 builder.Services.AddCore(builder.Configuration);
+
+builder.Services.AddAzureOpenAi(builder.Configuration); 
+builder.Services.AddSingleton<IAnalysisService, AnalysisService>();
 
 var app = builder.Build();
 
@@ -25,5 +29,6 @@ app.UseHttpsRedirection();
 // Map API routes
 var api = app.MapGroup("/api");
 api.MapQuestionRoutes();
+api.MapResultRoutes();
 
 app.Run();

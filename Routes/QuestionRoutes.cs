@@ -7,7 +7,7 @@ public static class QuestionRoutes
 {
     public static void MapQuestionRoutes(this IEndpointRouteBuilder app)
     {
-        // TODO: Add rate limiting
+        // TOOD: add support for other languages
         app.MapGet("/questions/{language}", async (string language) =>
         {
             var json = await File.ReadAllTextAsync("TempData/questions-jp.json");
