@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading.RateLimiting;
 using Interfaces;
 using Models;
 using Routes;
@@ -16,7 +17,28 @@ builder.Services.AddCore(builder.Configuration);
 builder.Services.AddAzureOpenAi(builder.Configuration); 
 builder.Services.AddSingleton<IAnalysisService, AnalysisService>();
 
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+    options.AddPolicy("limit", context => 
+        RateLimitPartition.GetTokenBucketLimiter(
+             // TODO: Once we support user accounts, use user ID instead of IP address
+            context.Connection.RemoteIpAddress?.ToString() ?? "unkown",
+            _ => new TokenBucketRateLimiterOptions
+            {
+                TokenLimit = 5,
+                TokensPerPeriod = 5,
+                ReplenishmentPeriod = TimeSpan.FromMinutes(10),
+                QueueLimit = 0,
+            }
+        )
+    );
+});
+
+
 var app = builder.Build();
+app.UseRateLimiter();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
