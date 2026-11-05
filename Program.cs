@@ -3,6 +3,7 @@ using System.Threading.RateLimiting;
 using Interfaces;
 using Models;
 using Routes;
+using Scalar.AspNetCore;
 using Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,6 +45,9 @@ app.UseRateLimiter();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    // Add a UI for Scalar API on localhost:5030/scalar/v1
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();
