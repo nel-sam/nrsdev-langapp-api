@@ -4,7 +4,7 @@ using Models;
 
 namespace Routes;
 
-internal sealed record ResultRequest(string targetLanguage, string nativeLanguage, List<QuestionResult> Results);
+internal sealed record ResultRequest(string TargetLanguage, string NativeLanguage, List<QuestionResult> Results);
 
 public static class ResultRoutes
 {
@@ -12,7 +12,7 @@ public static class ResultRoutes
     {
         // TODO: Add rate limiting
         app.MapPost("/results", async (ResultRequest request, IAnalysisService analysisService) => {
-            var result = await analysisService.AnalyzeAsync(request.targetLanguage, "A1", request.nativeLanguage, request.Results);
+            var result = await analysisService.AnalyzeAsync(request.TargetLanguage, "A1", request.NativeLanguage, request.Results);
             return Results.Ok(result);
         });
     }

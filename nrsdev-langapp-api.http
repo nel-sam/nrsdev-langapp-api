@@ -9,6 +9,8 @@ POST {{nrsdev_langapp_api_HostAddress}}/api/results
 Content-Type: application/json
 
 {
+    "TargetLanguage": "JP",
+    "NativeLanguage": "EN",
     "Results": [
         {
             "Question": "What is 'hello' in Japanese?",

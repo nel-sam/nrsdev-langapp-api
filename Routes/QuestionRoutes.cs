@@ -12,6 +12,10 @@ public static class QuestionRoutes
         {
             var json = await File.ReadAllTextAsync("TempData/questions-jp.json");
             var questions = JsonSerializer.Deserialize<List<Question>>(json) ?? [];
+            
+            // Pick 8 random questions
+            questions = questions.OrderBy(_ => Guid.NewGuid()).Take(8).ToList();
+
             return questions;
         })
         .WithName("GetQuestions");

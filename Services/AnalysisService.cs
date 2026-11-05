@@ -14,17 +14,32 @@ public class AnalysisService(IChatClient chat) : IAnalysisService
         List<QuestionResult> userResponses,
         CancellationToken ct = default)
     {
+        if (targetLanguage == "EN")
+            targetLanguage = "English";
+        if (targetLanguage == "JP")
+            targetLanguage = "Japanese";
+        if (targetLanguage == "KR")
+            targetLanguage = "Korean";
+
+        if (nativeLanguage == "EN")
+            nativeLanguage = "English";
+        if (nativeLanguage == "ES")
+            nativeLanguage = "Spanish";
+
         var prompt = $"""
             You are a language coach analyzing a practice session for a
             {level} learner of {targetLanguage}. Their native language
-            is {nativeLanguage}.
+            is {nativeLanguage} so make sure to give the explanation in {nativeLanguage}.
 
-            Identify the 3 to 5 most impactful grammar and/or vocabulary
-            topics to focus on next. Prioritize patterns that repeat over
-            one-off typos. Explanations in the native language, examples
-            in the target language.
+            Based on the results from all the questions, identify the 3 to 5 most
+            impactful grammar and/or vocabulary topics for the student to focus on next.
+            Prioritize patterns that repeat over one-off typos. Explanations in the native language, examples
+            in the target language. Do not give one correction for each question, instead address
+            the overall patterns, not each mistake.
 
-            USER RESPONSE:
+            Do not try to add formatting, just use plain text. Do not use * for emphasis, and definitely avoid em dashes.
+
+            USER RESPONSES:
             {string.Join("\n---\n", userResponses)}
             """;
 
