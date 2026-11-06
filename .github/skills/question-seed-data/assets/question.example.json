@@ -1,0 +1,19 @@
+[
+  {
+    "question": "わたし ___ がくせいです。",
+    "tested-abilities": [
+      "particles",
+      "copula",
+      "self-introduction"
+    ],
+    "correct-answer-index": 0,
+    "choices": [
+      "は",
+      "を",
+      "に",
+      "で",
+      "と",
+      "I don't know"
+    ]
+  }
+]

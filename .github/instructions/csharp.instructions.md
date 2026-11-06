@@ -35,9 +35,7 @@
 
 ## Data Access
 
-- Prefer Entity Framework Core although Dapper is preferred for small projects.
-- Write clear LINQ that resembles the business requirement.
-- Avoid overly clever LINQ expressions.
+- Use Dapper in this project.
 - Use projections instead of loading entire entities when appropriate.
 - Avoid premature micro-optimizations.
 - Optimize only after identifying an actual performance concern.

@@ -1,0 +1,14 @@
+{
+  "TargetLanguage": "JP",
+  "NativeLanguage": "ES",
+  "Results": [
+    { "Question": "わたし ___ がくせいです。", "CorrectAnswer": "は", "GivenAnswer": "は" },
+    { "Question": "このりんごは ___ です。", "CorrectAnswer": "おいしい", "GivenAnswer": "おいしいな" },
+    { "Question": "きのう えいがを ___。", "CorrectAnswer": "みました", "GivenAnswer": "みます" },
+    { "Question": "あした ともだちに ___。", "CorrectAnswer": "あいます", "GivenAnswer": "あいました" },
+    { "Question": "とうきょうは ___ まちです。", "CorrectAnswer": "おおきい", "GivenAnswer": "おおきいな" },
+    { "Question": "まいあさ コーヒーを ___。", "CorrectAnswer": "のみます", "GivenAnswer": "のみます" },
+    { "Question": "せんしゅう にほんごを ___。", "CorrectAnswer": "べんきょうしました", "GivenAnswer": "べんきょうします" },
+    { "Question": "これは ___ ですか。", "CorrectAnswer": "なん", "GivenAnswer": "だれ" }
+  ]
+}

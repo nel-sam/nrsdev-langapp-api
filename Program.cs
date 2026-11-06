@@ -1,7 +1,5 @@
-using System.Text.Json;
 using System.Threading.RateLimiting;
 using Interfaces;
-using Models;
 using Routes;
 using Scalar.AspNetCore;
 using Services;
@@ -36,7 +34,6 @@ builder.Services.AddRateLimiter(options =>
         )
     );
 });
-
 
 var app = builder.Build();
 app.UseRateLimiter();

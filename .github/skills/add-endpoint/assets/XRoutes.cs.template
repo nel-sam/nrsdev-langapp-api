@@ -1,0 +1,38 @@
+using Interfaces;
+using Models;
+
+namespace Routes;
+
+// Route-local DTOs. Move to Data/Models if a service needs them.
+internal sealed record Create__Resource__Request(string Example);
+
+public static class __Resource__Routes
+{
+    public static void Map__Resource__Routes(this IEndpointRouteBuilder app)
+    {
+        // Paths are relative to the /api group configured in Program.cs
+        app.MapGet("/__resources__/{id:int}", async (int id, CancellationToken ct) =>
+        {
+            // var item = await service.GetAsync(id, ct);
+            // return item is null ? Results.NotFound() : Results.Ok(item);
+            return Results.Ok(new { id });
+        })
+        .WithName("Get__Resource__");
+
+        app.MapPost("/__resources__", async (Create__Resource__Request request, CancellationToken ct) =>
+        {
+            if (string.IsNullOrWhiteSpace(request.Example))
+            {
+                return Results.ValidationProblem(new Dictionary<string, string[]>
+                {
+                    [nameof(request.Example)] = ["Example is required."]
+                });
+            }
+
+            // var created = await service.CreateAsync(request, ct);
+            return Results.Created($"/api/__resources__/{1}", request);
+        })
+        .WithName("Create__Resource__");
+        // .RequireRateLimiting("limit");  // add when the endpoint is expensive (LLM, etc.)
+    }
+}
