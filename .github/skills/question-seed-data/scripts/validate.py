@@ -11,7 +11,7 @@ from collections import Counter
 
 REQUIRED_KEYS = {"question", "tested-abilities", "correct-answer-index", "choices"}
 CHOICE_COUNT = 6
-LAST_CHOICE = "I don't know"
+LAST_CHOICE = "unknown"
 
 
 def main() -> int:

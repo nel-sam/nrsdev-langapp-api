@@ -1,4 +1,3 @@
-
 using Interfaces;
 using Models;
 
@@ -10,8 +9,12 @@ public static class ResultRoutes
 {
     public static void MapResultRoutes(this IEndpointRouteBuilder app)
     {
-        app.MapPost("/results", async (ResultRequest request, IAnalysisService analysisService) => {
+        app.MapPost("/results", async (ResultRequest request, IAnalysisService analysisService, IRAGService ragService) => {
             var result = await analysisService.AnalyzeAsync(request.TargetLanguage, "A1", request.NativeLanguage, request.Results);
+            
+            var userName = "testuser@test.com"; // TODO: Get from auth provider
+            await ragService.SaveAsync(userName, request.Results);
+            
             return Results.Ok(result);
         })
         .RequireRateLimiting("limit");

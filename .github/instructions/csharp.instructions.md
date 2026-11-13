@@ -15,7 +15,6 @@
 - Prefer straightforward architectures.
 - Avoid over-engineering.
 - Avoid unnecessary layers.
-- Avoid creating interfaces when only one implementation exists and multiple implementations are not anticipated.
 - Prefer vertical slices or feature-oriented organization when practical.
 - Keep boundaries clear but lightweight.
 

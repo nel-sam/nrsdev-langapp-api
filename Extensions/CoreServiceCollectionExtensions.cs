@@ -1,10 +1,12 @@
 using Data;
+using Interfaces;
+using Services;
 
-namespace Services;
+namespace Extensions;
 
 public static class CoreServiceCollectionExtensions
 {
-    public static IServiceCollection AddCore(this IServiceCollection services, IConfiguration config)
+    public static IServiceCollection AddCoreServices(this IServiceCollection services, IConfiguration config)
     {
         // Sqlite setup
         var connectionString = config.GetConnectionString("Default");
@@ -15,6 +17,9 @@ public static class CoreServiceCollectionExtensions
         }
 
         services.AddSingleton<IDbConnectionFactory>(new SqlLiteConnectionFactory(connectionString));
+        services.AddSingleton<ISessionEmbeddingRepository, SessionEmbeddingRepository>();
+        services.AddSingleton<IEmbeddingService, EmbeddingService>();
+        services.AddSingleton<IRAGService, RAGService>();
         return services;
     }
 

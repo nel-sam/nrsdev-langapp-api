@@ -1,342 +1,110 @@
 [
-  {
-    "question": "わたし ___ がくせいです。",
-    "tested-abilities": [
-      "particles",
-      "copula",
-      "self-introduction"
-    ],
-    "correct-answer-index": 0,
-    "choices": [
-      "は",
-      "を",
-      "に",
-      "で",
-      "と",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "これは ___ ですか。",
-    "tested-abilities": [
-      "asking-questions",
-      "demonstratives",
-      "basic-sentence-structure"
-    ],
-    "correct-answer-index": 2,
-    "choices": [
-      "どこ",
-      "だれ",
-      "なん",
-      "いつ",
-      "いくら",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "毎日 7時 ___ おきます。",
-    "tested-abilities": [
-      "time-expressions",
-      "particles",
-      "daily-routines"
-    ],
-    "correct-answer-index": 1,
-    "choices": [
-      "を",
-      "に",
-      "で",
-      "から",
-      "へ",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "日本語 ___ べんきょうします。",
-    "tested-abilities": [
-      "object-particle",
-      "study-verbs",
-      "language-vocabulary"
-    ],
-    "correct-answer-index": 2,
-    "choices": [
-      "が",
-      "に",
-      "を",
-      "へ",
-      "と",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "どこ ___ 来ましたか。",
-    "tested-abilities": [
-      "asking-origin",
-      "particles",
-      "question-words"
-    ],
-    "correct-answer-index": 3,
-    "choices": [
-      "を",
-      "に",
-      "へ",
-      "から",
-      "で",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "きょうは ___ です。",
-    "tested-abilities": [
-      "days-of-week",
-      "basic-vocabulary",
-      "reading-comprehension"
-    ],
-    "correct-answer-index": 1,
-    "choices": [
-      "りんご",
-      "月曜日",
-      "学生",
-      "二人",
-      "先生",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "今何さいですか。",
-    "tested-abilities": [
-      "stating-age",
-      "asking-questions",
-      "basic-kanji"
-    ],
-    "correct-answer-index": 2,
-    "choices": [
-      "今は23時です",
-      "29せいです",
-      "34さいです",
-      "34円です",
-      "わたしです",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "わたしのたんじょうびは 5月3日 ___。",
-    "tested-abilities": [
-      "dates",
-      "copula",
-      "basic-sentence-structure"
-    ],
-    "correct-answer-index": 0,
-    "choices": [
-      "です",
-      "ます",
-      "でした",
-      "ません",
-      "では",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "コーヒー ___ のみます。",
-    "tested-abilities": [
-      "object-particle",
-      "food-and-drink",
-      "verbs"
-    ],
-    "correct-answer-index": 1,
-    "choices": [
-      "が",
-      "を",
-      "に",
-      "で",
-      "から",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "あした 学校へ ___。",
-    "tested-abilities": [
-      "movement-verbs",
-      "future-time",
-      "daily-life-vocabulary"
-    ],
-    "correct-answer-index": 4,
-    "choices": [
-      "たべます",
-      "ねます",
-      "みます",
-      "ききます",
-      "いきます",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "その本は ___ の本ですか。",
-    "tested-abilities": [
-      "possessives",
-      "asking-questions",
-      "particles"
-    ],
-    "correct-answer-index": 3,
-    "choices": [
-      "どれ",
-      "どこ",
-      "いつ",
-      "だれ",
-      "なに",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "わたしは日本語と英語 ___ はなします。",
-    "tested-abilities": [
-      "listing-items",
-      "particles",
-      "languages"
-    ],
-    "correct-answer-index": 1,
-    "choices": [
-      "を",
-      "が",
-      "で",
-      "へ",
-      "まで",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "ねこが ___ います。",
-    "tested-abilities": [
-      "existence-verbs",
-      "location-vocabulary",
-      "basic-sentences"
-    ],
-    "correct-answer-index": 2,
-    "choices": [
-      "おいしい",
-      "大きい",
-      "そこに",
-      "三さい",
-      "のみます",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "今日はとても ___ です。",
-    "tested-abilities": [
-      "i-adjectives",
-      "weather",
-      "basic-vocabulary"
-    ],
-    "correct-answer-index": 0,
-    "choices": [
-      "あつい",
-      "あつく",
-      "あつかった",
-      "あつさ",
-      "あつくて",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "りんごを ___ たべます。",
-    "tested-abilities": [
-      "adverbs",
-      "basic-vocabulary",
-      "sentence-comprehension"
-    ],
-    "correct-answer-index": 4,
-    "choices": [
-      "どこ",
-      "いつ",
-      "だれ",
-      "なに",
-      "よく",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "本はつくえの ___ あります。",
-    "tested-abilities": [
-      "location-expressions",
-      "existence-verbs",
-      "particles"
-    ],
-    "correct-answer-index": 1,
-    "choices": [
-      "したを",
-      "うえに",
-      "まえを",
-      "なかを",
-      "よこを",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "わたしは学生では ___。",
-    "tested-abilities": [
-      "negative-copula",
-      "basic-grammar",
-      "self-introduction"
-    ],
-    "correct-answer-index": 3,
-    "choices": [
-      "です",
-      "ました",
-      "でした",
-      "ありません",
-      "なります",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "___ を見ますか。",
-    "tested-abilities": [
-      "question-words",
-      "object-particle",
-      "verbs"
-    ],
-    "correct-answer-index": 2,
-    "choices": [
-      "どこ",
-      "だれ",
-      "なに",
-      "いつ",
-      "いくつ",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "きのう えいがを ___。",
-    "tested-abilities": [
-      "past-tense",
-      "verbs",
-      "time-expressions"
-    ],
-    "correct-answer-index": 0,
-    "choices": [
-      "みました",
-      "みます",
-      "みません",
-      "みたい",
-      "みる",
-      "I don't know"
-    ]
-  },
-  {
-    "question": "日曜日に友だちと ___。",
-    "tested-abilities": [
-      "social-activities",
-      "verb-selection",
-      "daily-life"
-    ],
-    "correct-answer-index": 4,
-    "choices": [
-      "ねます",
-      "のみます",
-      "かいます",
-      "つくります",
-      "あいます",
-      "I don't know"
-    ]
-  }
+  {"question":"友達(ともだち)は 学生(がくせい)です。私(わたし) ___ 学生(がくせい)です。","tested-abilities":["particles","self-introduction"],"correct-answer-index":0,"choices":["も","を","に","で","と","unknown"]},
+  {"question":"これは ___ ですか。—それは 本(ほん)です。","tested-abilities":["asking-questions","question-words"],"correct-answer-index":2,"choices":["だれ","どこ","なん","いつ","いくら","unknown"]},
+  {"question":"毎朝(まいあさ) 七時(しちじ) ___ 起きます(おきます)。","tested-abilities":["time-expressions","particles","daily-routines"],"correct-answer-index":1,"choices":["を","に","で","から","へ","unknown"]},
+  {"question":"日本語(にほんご) ___ べんきょうします。","tested-abilities":["object-particle","study-verbs"],"correct-answer-index":2,"choices":["が","に","を","へ","と","unknown"]},
+  {"question":"大阪(おおさか) ___ 来ました(きました)。どこから きましたか。","tested-abilities":["asking-origin","particles"],"correct-answer-index":3,"choices":["を","に","へ","から","で","unknown"]},
+  {"question":"月曜日(げつようび)の 次(つぎ)の日(ひ)は ___ です。","tested-abilities":["days-of-week","basic-vocabulary"],"correct-answer-index":1,"choices":["月曜日(げつようび)","火曜日(かようび)","水曜日(すいようび)","木曜日(もくようび)","金曜日(きんようび)","unknown"]},
+  {"question":"何歳(なんさい)ですか。—私(わたし)は ___ です。","tested-abilities":["stating-age","asking-questions"],"correct-answer-index":2,"choices":["二十三時(にじゅうさんじ)","二十九円(にじゅうきゅうえん)","三十四歳(さんじゅうよんさい)","三十四時(さんじゅうよんじ)","学生(がくせい)","unknown"]},
+  {"question":"私(わたし)の たんじょうびは 五月三日(ごがつみっか) ___。","tested-abilities":["dates","copula"],"correct-answer-index":0,"choices":["です","ます","でした","ません","では","unknown"]},
+  {"question":"コーヒー ___ 飲(の)みます。","tested-abilities":["object-particle","food-and-drink"],"correct-answer-index":1,"choices":["が","を","に","で","から","unknown"]},
+  {"question":"明日(あした) 学校(がっこう)へ ___。","tested-abilities":["movement-verbs","future-time"],"correct-answer-index":4,"choices":["食べます(たべます)","寝ます(ねます)","見ます(みます)","聞きます(ききます)","行きます(いきます)","unknown"]},
+  {"question":"この 本(ほん)は ___ のですか。—田中(たなか)さんのです。","tested-abilities":["possessives","asking-questions"],"correct-answer-index":3,"choices":["どれ","どこ","いつ","だれ","なに","unknown"]},
+  {"question":"日本語(にほんご)と 英語(えいご) ___ 話します(はなします)。","tested-abilities":["listing-items","particles","languages"],"correct-answer-index":1,"choices":["を","が","で","へ","まで","unknown"]},
+  {"question":"部屋(へや)に 猫(ねこ)が ___。","tested-abilities":["existence-verbs","basic-sentences"],"correct-answer-index":2,"choices":["おいしい","大きい(おおきい)","います","あります","飲みます(のみます)","unknown"]},
+  {"question":"今(いま)、外(そと)は 三十度(さんじゅうど)です。今日(きょう)は とても ___ です。","tested-abilities":["i-adjectives","weather"],"correct-answer-index":0,"choices":["あつい","あつく","あつかった","あつさ","あつくて","unknown"]},
+  {"question":"私(わたし)は りんごが すきです。毎日(まいにち) りんごを ___ 食(た)べます。","tested-abilities":["adverbs","basic-vocabulary"],"correct-answer-index":4,"choices":["どこ","いつ","だれ","なに","よく","unknown"]},
+  {"question":"本(ほん)は 机(つくえ)より 高い(たかい)ところに あります。机(つくえ)の ___ に あります。","tested-abilities":["location-expressions","particles"],"correct-answer-index":1,"choices":["下(した)","上(うえ)","前(まえ)","中(なか)","横(よこ)","unknown"]},
+  {"question":"私(わたし)は 学生(がくせい)です。先生(せんせい)では ___。","tested-abilities":["negative-copula","basic-grammar"],"correct-answer-index":3,"choices":["です","ました","でした","ありません","なります","unknown"]},
+  {"question":"あなたの 名前(なまえ)は ___ ですか。—たろうです。","tested-abilities":["question-words","self-introduction"],"correct-answer-index":2,"choices":["どこ","だれ","なん","いつ","いくつ","unknown"]},
+  {"question":"昨日(きのう) 映画(えいが)を ___。","tested-abilities":["past-tense","verbs","time-expressions"],"correct-answer-index":0,"choices":["見ました(みました)","見ます(みます)","見ません(みません)","見たい(みたい)","見る(みる)","unknown"]},
+  {"question":"日曜日(にちようび)に 友達(ともだち)に ___。一緒(いっしょ)に 公園(こうえん)へ 行きます(いきます)。","tested-abilities":["social-activities","verb-selection"],"correct-answer-index":4,"choices":["寝ます(ねます)","飲みます(のみます)","買います(かいます)","作ります(つくります)","会います(あいます)","unknown"]},
+
+  {"question":"図書館(としょかん) ___ 本(ほん)を 読みます(よみます)。","tested-abilities":["particles","location-expressions"],"correct-answer-index":2,"choices":["に","を","で","へ","から","unknown"]},
+  {"question":"毎朝(まいあさ) 七時(しちじ)に 家(うち) ___ 出ます(でます)。","tested-abilities":["particles","daily-routines"],"correct-answer-index":0,"choices":["を","に","で","へ","と","unknown"]},
+  {"question":"私(わたし)は 大阪(おおさか) ___ 住んでいます(すんでいます)。","tested-abilities":["particles","location-vocabulary"],"correct-answer-index":1,"choices":["で","に","を","へ","から","unknown"]},
+  {"question":"部屋(へや)に 犬(いぬ) ___ います。","tested-abilities":["existence-verbs","particles"],"correct-answer-index":3,"choices":["を","に","で","が","へ","unknown"]},
+  {"question":"友達(ともだち) ___ 駅(えき)まで 歩きます(あるきます)。","tested-abilities":["particles","social-activities"],"correct-answer-index":4,"choices":["を","に","で","へ","と","unknown"]},
+  {"question":"午後(ごご) 三時(さんじ) ___ 午後(ごご) 四時(よじ)まで 勉強します(べんきょうします)。","tested-abilities":["time-expressions","particles"],"correct-answer-index":2,"choices":["まで","に","から","で","を","unknown"]},
+  {"question":"午前(ごぜん) 九時(くじ)から 午後(ごご) 五時(ごじ) ___ 働きます(はたらきます)。","tested-abilities":["time-expressions","particles"],"correct-answer-index":0,"choices":["まで","から","に","で","へ","unknown"]},
+  {"question":"兄(あに)は 私(わたし) ___ せが 高い(たかい)です。","tested-abilities":["comparison","i-adjectives"],"correct-answer-index":0,"choices":["より","と","が","を","に","unknown"]},
+  {"question":"クラスで 田中(たなか)さんが ___ せが 高い(たかい)です。","tested-abilities":["comparison","basic-vocabulary"],"correct-answer-index":3,"choices":["もっと","とても","すこし","いちばん","あまり","unknown"]},
+  {"question":"この りんごは あの りんご ___ 大きい(おおきい)です。","tested-abilities":["comparison","i-adjectives"],"correct-answer-index":2,"choices":["まで","から","より","だけ","しか","unknown"]},
+
+  {"question":"この 中(なか)で ___ りんごが あまいです。","tested-abilities":["comparison","i-adjectives"],"correct-answer-index":4,"choices":["もっと","とても","すこし","あまり","いちばん","unknown"]},
+  {"question":"毎日(まいにち) 朝ごはん(あさごはん)を ___。","tested-abilities":["verbs","daily-routines"],"correct-answer-index":1,"choices":["食べました(たべました)","食べます(たべます)","食べませんでした(たべませんでした)","食べません(たべません)","食べたい(たべたい)","unknown"]},
+  {"question":"昨日(きのう) 公園(こうえん)で 友達(ともだち)と ___。","tested-abilities":["past-tense","verbs"],"correct-answer-index":3,"choices":["遊びます(あそびます)","遊びません(あそびません)","遊びたい(あそびたい)","遊びました(あそびました)","遊びませんでした(あそびませんでした)","unknown"]},
+  {"question":"明日(あした) 雨(あめ)が ___。","tested-abilities":["future-time","weather"],"correct-answer-index":0,"choices":["降ります(ふります)","降りました(ふりました)","降っていました(ふっていました)","降りませんでした(ふりませんでした)","降りたいです(ふりたいです)","unknown"]},
+  {"question":"今(いま) 水(みず)を ___ います。","tested-abilities":["verbs","basic-grammar"],"correct-answer-index":2,"choices":["飲みます(のみます)","飲みたい(のみたい)","飲んで(のんで)","飲みました(のみました)","飲まない(のまない)","unknown"]},
+  {"question":"窓(まど)を ___ ください。寒い(さむい)ですから。","tested-abilities":["requests","verbs"],"correct-answer-index":4,"choices":["開けて(あけて)","開ける(あける)","開けた(あけた)","開けない(あけない)","閉めて(しめて)","unknown"]},
+  {"question":"部屋(へや)が 暗い(くらい)です。電気(でんき)を ___ ください。","tested-abilities":["requests","daily-life"],"correct-answer-index":1,"choices":["消して(けして)","つけて","あけて","しめて","消していました(けしていました)","unknown"]},
+  {"question":"ここで 写真(しゃしん)を とっても ___ ですか。—はい、いいですよ。","tested-abilities":["asking-permission","basic-grammar"],"correct-answer-index":0,"choices":["いい","だめ","いけない","ください","しましょう","unknown"]},
+  {"question":"ここで たばこを ___ はいけません。","tested-abilities":["prohibition","basic-grammar"],"correct-answer-index":1,"choices":["吸います(すいます)","吸って(すって)","吸った(すった)","吸っては(すっては)","吸わない(すわない)","unknown"]},
+  {"question":"毎日(まいにち) 運動(うんどう)を ___ います。","tested-abilities":["verbs","daily-routines"],"correct-answer-index":2,"choices":["する","します","して","した","しない","unknown"]},
+
+  {"question":"晩ごはん(ばんごはん)を ___ から、テレビを 見ます(みます)。","tested-abilities":["sequence-expressions","verbs"],"correct-answer-index":4,"choices":["食べます(たべます)","食べる(たべる)","食べた(たべた)","食べない(たべない)","食べて(たべて)","unknown"]},
+  {"question":"一緒(いっしょ)に 公園(こうえん)へ ___ ませんか。","tested-abilities":["inviting","movement-verbs"],"correct-answer-index":1,"choices":["いきます","いき","いった","いって","いかない","unknown"]},
+  {"question":"では、ここで やすみ ___。","tested-abilities":["volitional-form","daily-life"],"correct-answer-index":3,"choices":["ます","ました","ません","ましょう","たいです","unknown"]},
+  {"question":"この 本(ほん)を 読んで(よんで) ___。","tested-abilities":["requests","verbs"],"correct-answer-index":0,"choices":["ください","います","あります","です","でした","unknown"]},
+  {"question":"本(ほん)を 借りても(かりても) ___ ですか。—はい、どうぞ。","tested-abilities":["asking-permission","basic-grammar"],"correct-answer-index":2,"choices":["だめ","いけない","いい","ください","しましょう","unknown"]},
+  {"question":"昨日(きのう)は ___ です。","tested-abilities":["i-adjectives","past-tense"],"correct-answer-index":4,"choices":["暑い(あつい)","暑く(あつく)","暑さ(あつさ)","暑くて(あつくて)","暑かった(あつかった)","unknown"]},
+  {"question":"この 町(まち)は しずか ___。","tested-abilities":["na-adjectives","basic-grammar"],"correct-answer-index":1,"choices":["な","です","く","かった","に","unknown"]},
+  {"question":"この りんごは ___ です。","tested-abilities":["i-adjectives","basic-vocabulary"],"correct-answer-index":0,"choices":["甘い(あまい)","甘く(あまく)","甘な(あまな)","甘さ(あまさ)","甘かった(あまかった)","unknown"]},
+  {"question":"この ふゆは さむ ___ ありません。","tested-abilities":["i-adjectives","negative-copula"],"correct-answer-index":2,"choices":["い","かった","く","くて","さ","unknown"]},
+  {"question":"この へやは きれい ___。","tested-abilities":["na-adjectives","basic-grammar"],"correct-answer-index":2,"choices":["な","く","です","かった","に","unknown"]},
+
+  {"question":"この かばんは あまり ___ ないです。","tested-abilities":["i-adjectives","negative-copula"],"correct-answer-index":1,"choices":["大きい(おおきい)","大きく(おおきく)","大きな(おおきな)","大きかった(おおきかった)","大きくて(おおきくて)","unknown"]},
+  {"question":"昨日(きのう)の 映画(えいが)は おもしろ ___。","tested-abilities":["i-adjectives","past-tense"],"correct-answer-index":4,"choices":["い","く","な","くて","かった","unknown"]},
+  {"question":"猫(ねこ)が 好き(すき)です。犬(いぬ)が ___ です。","tested-abilities":["similar-vocabulary","basic-vocabulary"],"correct-answer-index":0,"choices":["嫌い(きらい)","じょうず","へた","しずか","げんき","unknown"]},
+  {"question":"今日(きょう)は 三十度(さんじゅうど)です。とても ___ です。","tested-abilities":["weather","i-adjectives"],"correct-answer-index":2,"choices":["寒い(さむい)","すずしい","暑い(あつい)","新しい(あたらしい)","広い(ひろい)","unknown"]},
+  {"question":"冬(ふゆ)は 寒い(さむい)ですが、夏(なつ)は ___ です。","tested-abilities":["seasons","i-adjectives"],"correct-answer-index":3,"choices":["寒い(さむい)","すずしい","つめたい","暑い(あつい)","新しい(あたらしい)","unknown"]},
+  {"question":"朝ごはん(あさごはん)に パンと ___ を 飲みます(のみます)。","tested-abilities":["food-and-drink","basic-vocabulary"],"correct-answer-index":1,"choices":["ごはん","ミルク","りんご","たまご","さかな","unknown"]},
+  {"question":"のどが かわきました。つめたい ___ を 飲みます(のみます)。","tested-abilities":["food-and-drink","basic-vocabulary"],"correct-answer-index":4,"choices":["パン","にく","ごはん","たまご","水(みず)","unknown"]},
+  {"question":"おなかが すきました。ご飯(ごはん)を ___。","tested-abilities":["food-and-drink","verbs"],"correct-answer-index":0,"choices":["食べます(たべます)","飲みます(のみます)","聞きます(ききます)","会います(あいます)","寝ます(ねます)","unknown"]},
+  {"question":"駅(えき)で 電車(でんしゃ)に ___。","tested-abilities":["transportation","verbs"],"correct-answer-index":3,"choices":["降ります(おります)","会います(あいます)","作ります(つくります)","乗ります(のります)","開けます(あけます)","unknown"]},
+  {"question":"次(つぎ)の 駅(えき)で 電車(でんしゃ)を ___。","tested-abilities":["transportation","verbs"],"correct-answer-index":2,"choices":["乗ります(のります)","行きます(いきます)","降ります(おります)","来ます(きます)","借ります(かります)","unknown"]},
+
+  {"question":"バス ___ 学校(がっこう)へ 行きます(いきます)。","tested-abilities":["transportation","particles"],"correct-answer-index":1,"choices":["を","で","に","へ","から","unknown"]},
+  {"question":"私(わたし)は 友達(ともだち)に 本(ほん)を ___。","tested-abilities":["similar-vocabulary","verbs"],"correct-answer-index":4,"choices":["借ります(かります)","読みます(よみます)","見ます(みます)","もらいます","貸します(かします)","unknown"]},
+  {"question":"私(わたし)は 友達(ともだち)から 本(ほん)を ___。","tested-abilities":["similar-vocabulary","verbs"],"correct-answer-index":0,"choices":["借ります(かります)","貸します(かします)","あげます","おくります","つくります","unknown"]},
+  {"question":"私(わたし)は 妹(いもうと)に プレゼントを ___。","tested-abilities":["giving-and-receiving","verbs"],"correct-answer-index":2,"choices":["もらいます","くれます","あげます","借ります(かります)","貸します(かします)","unknown"]},
+  {"question":"私(わたし)は 兄(あに)から プレゼントを ___。","tested-abilities":["giving-and-receiving","verbs"],"correct-answer-index":1,"choices":["あげました","もらいました","くれました","貸しました(かしました)","借りました(かりました)","unknown"]},
+  {"question":"母(はは)は 私(わたし)に プレゼントを ___。","tested-abilities":["giving-and-receiving","verbs"],"correct-answer-index":3,"choices":["あげました","もらいました","貸しました(かしました)","くれました","借りました(かりました)","unknown"]},
+  {"question":"あれは ___ の 傘(かさ)ですか。—先生(せんせい)のです。","tested-abilities":["possessives","question-words"],"correct-answer-index":4,"choices":["どこ","いつ","なに","いくら","だれ","unknown"]},
+  {"question":"私(わたし)の 手(て)に ある かばんは ___ です。","tested-abilities":["demonstratives","basic-vocabulary"],"correct-answer-index":1,"choices":["それ","これ","あれ","どれ","そこ","unknown"]},
+  {"question":"あなたの 手(て)に ある かばんは ___ です。","tested-abilities":["demonstratives","basic-vocabulary"],"correct-answer-index":0,"choices":["それ","これ","あれ","どれ","ここ","unknown"]},
+  {"question":"むこうに ある かばんは ___ です。","tested-abilities":["demonstratives","basic-vocabulary"],"correct-answer-index":2,"choices":["これ","それ","あれ","どれ","ここ","unknown"]},
+
+  {"question":"トイレは ___ ですか。—あそこです。","tested-abilities":["asking-questions","question-words"],"correct-answer-index":3,"choices":["だれ","いつ","なに","どこ","いくら","unknown"]},
+  {"question":"ここは 図書館(としょかん)です。ここで ___ を 読みます(よみます)。","tested-abilities":["basic-vocabulary","reading-comprehension"],"correct-answer-index":4,"choices":["くつ","かさ","かぎ","ぼうし","本(ほん)","unknown"]},
+  {"question":"家(いえ)に 猫(ねこ)が ___ います。","tested-abilities":["counters","existence-verbs"],"correct-answer-index":0,"choices":["一匹(いっぴき)","一本(いっぽん)","一枚(いちまい)","一人(ひとり)","一台(いちだい)","unknown"]},
+  {"question":"りんごを ___ ください。","tested-abilities":["counters","food-and-drink"],"correct-answer-index":2,"choices":["三人(さんにん)","三本(さんぼん)","三つ(みっつ)","三台(さんだい)","三枚(さんまい)","unknown"]},
+  {"question":"友達(ともだち)は 二人(ふたり)です。私(わたし)を いれると、みんなで ___ です。","tested-abilities":["counters","stating-age"],"correct-answer-index":1,"choices":["二人(ふたり)","三人(さんにん)","四人(よにん)","五人(ごにん)","一人(ひとり)","unknown"]},
+  {"question":"えんぴつを 二(に) ___ ください。","tested-abilities":["counters","basic-vocabulary"],"correct-answer-index":4,"choices":["人(にん)","枚(まい)","台(だい)","匹(ひき)","本(ほん)","unknown"]},
+  {"question":"コップに 水(みず)を ___ ください。","tested-abilities":["requests","verbs"],"correct-answer-index":3,"choices":["開けて(あけて)","閉めて(しめて)","切って(きって)","入れて(いれて)","消して(けして)","unknown"]},
+  {"question":"毎朝(まいあさ) 七時(しちじ) ___ 朝ごはん(あさごはん)を 食べます(たべます)。","tested-abilities":["time-expressions","particles"],"correct-answer-index":0,"choices":["に","を","で","から","まで","unknown"]},
+  {"question":"七時(しちじ)に 起きます(おきます)。八時(はちじ) ___ 学校(がっこう)へ 行きます(いきます)。","tested-abilities":["time-expressions","particles"],"correct-answer-index":2,"choices":["まで","から","に","を","で","unknown"]},
+  {"question":"昨日(きのう)は 日曜日(にちようび)でした。今日(きょう)は ___ です。","tested-abilities":["days-of-week","time-expressions"],"correct-answer-index":1,"choices":["土曜日(どようび)","月曜日(げつようび)","火曜日(かようび)","水曜日(すいようび)","金曜日(きんようび)","unknown"]},
+
+  {"question":"明日(あした)は 火曜日(かようび)です。今日(きょう)は ___ です。","tested-abilities":["days-of-week","time-expressions"],"correct-answer-index":4,"choices":["日曜日(にちようび)","水曜日(すいようび)","木曜日(もくようび)","金曜日(きんようび)","月曜日(げつようび)","unknown"]},
+  {"question":"歯(は)を みがきおわりました。その ___ ベッドに 入ります(はいります)。","tested-abilities":["time-expressions","daily-routines"],"correct-answer-index":1,"choices":["まえに","あとで","まで","から","より","unknown"]},
+  {"question":"朝ごはん(あさごはん)を 食べました(たべました)。その ___ 学校(がっこう)へ 行きます(いきます)。","tested-abilities":["sequence-expressions","daily-routines"],"correct-answer-index":0,"choices":["あとで","まえに","まで","から","より","unknown"]},
+  {"question":"私(わたし)は 料理(りょうり) ___ できます。","tested-abilities":["skills","particles"],"correct-answer-index":0,"choices":["が","を","に","で","へ","unknown"]},
+  {"question":"ピアノ ___ 日本(にほん)の うたを ひきます。","tested-abilities":["instruments","particles"],"correct-answer-index":3,"choices":["を","に","が","で","へ","unknown"]},
+  {"question":"日本(にほん)へ ___ たいです。","tested-abilities":["desires","movement-verbs"],"correct-answer-index":4,"choices":["いきます","いった","いって","いかない","いき","unknown"]},
+  {"question":"映画(えいが)を ___ に 行きます(いきます)。","tested-abilities":["purpose-of-movement","verbs"],"correct-answer-index":3,"choices":["みます","みた","みて","み","みない","unknown"]},
+  {"question":"毎日(まいにち) 六時(ろくじ)に 起きる(おきる) ___ に しています。","tested-abilities":["basic-grammar","daily-routines"],"correct-answer-index":1,"choices":["ため","よう","こと","もの","ところ","unknown"]},
+  {"question":"雨(あめ)が 降っている(ふっている) ___、傘(かさ)を 持ちます(もちます)。","tested-abilities":["reasons","basic-grammar"],"correct-answer-index":0,"choices":["から","まで","より","だけ","しか","unknown"]},
+  {"question":"雨(あめ)が 降っても(ふっても)、さんぽに ___。","tested-abilities":["basic-grammar","verbs"],"correct-answer-index":4,"choices":["行きませんでした(いきませんでした)","行きたいです(いきたいです)","行きました(いきました)","行きません(いきません)","行きます(いきます)","unknown"]},
+
+  {"question":"ご飯(ごはん)を 食べて(たべて) ___、歯(は)を みがきます。","tested-abilities":["sequence-expressions","verbs"],"correct-answer-index":0,"choices":["から","まで","より","だけ","しか","unknown"]},
+  {"question":"明日(あした)は 休み(やすみ)です。___、会社(かいしゃ)へ 行きません(いきません)。","tested-abilities":["reasons","basic-grammar"],"correct-answer-index":3,"choices":["でも","しかし","それとも","だから","それから","unknown"]},
+  {"question":"はさみを 使います(つかいます)。紙(かみ)を ___ ください。","tested-abilities":["similar-vocabulary","requests"],"correct-answer-index":1,"choices":["かいて","きって","あらって","あけて","しめて","unknown"]},
+  {"question":"ノートに 名前(なまえ)を ___ ください。","tested-abilities":["similar-vocabulary","requests"],"correct-answer-index":0,"choices":["かいて","きって","あらって","あけて","しめて","unknown"]},
+  {"question":"朝(あさ)、せっけんで 顔(かお)を ___。","tested-abilities":["daily-routines","verbs"],"correct-answer-index":4,"choices":["きります","かきます","あけます","けします","あらいます","unknown"]},
+  {"question":"窓(まど)が あいています。寒い(さむい)ので、窓(まど)を ___。","tested-abilities":["similar-vocabulary","daily-life"],"correct-answer-index":2,"choices":["あけます","つけます","しめます","けします","きります","unknown"]},
+  {"question":"部屋(へや)が 暗い(くらい)です。電気(でんき)を ___。","tested-abilities":["similar-vocabulary","daily-life"],"correct-answer-index":3,"choices":["消します(けします)","しめます","あけます","つけます","おります","unknown"]},
+  {"question":"朝(あさ)、シャツを ___。","tested-abilities":["verbs","daily-routines"],"correct-answer-index":1,"choices":["ぬぎます","着ます(きます)","かぶります","はきます","あらいます","unknown"]},
+  {"question":"靴(くつ)を ___。","tested-abilities":["verbs","daily-routines"],"correct-answer-index":0,"choices":["はきます","きます","かぶります","ぬぎます","あけます","unknown"]},
+  {"question":"帽子(ぼうし)を ___。","tested-abilities":["verbs","daily-routines"],"correct-answer-index":4,"choices":["はきます","きます","ぬぎます","あらいます","かぶります","unknown"]}
 ]

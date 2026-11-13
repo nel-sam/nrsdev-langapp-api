@@ -3,6 +3,7 @@ using Interfaces;
 using Routes;
 using Scalar.AspNetCore;
 using Services;
+using Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 // Add core via extension method
-builder.Services.AddCore(builder.Configuration);
+builder.Services.AddCoreServices(builder.Configuration);
 
 builder.Services.AddAzureOpenAi(builder.Configuration); 
 builder.Services.AddSingleton<IAnalysisService, AnalysisService>();
@@ -36,6 +37,8 @@ builder.Services.AddRateLimiter(options =>
 });
 
 var app = builder.Build();
+
+await app.InitializeSchema();
 app.UseRateLimiter();
 
 // Configure the HTTP request pipeline.

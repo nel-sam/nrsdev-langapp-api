@@ -2,8 +2,7 @@ using Azure;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.AI;
 
-
-namespace Services;
+namespace Extensions;
 
 public static class AzureOpenAiExtensions
 {

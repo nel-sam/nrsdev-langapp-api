@@ -9,6 +9,6 @@
     { "Question": "としょかん ___ べんきょうします。", "CorrectAnswer": "で", "GivenAnswer": "に" },
     { "Question": "ともだち ___ はなします。", "CorrectAnswer": "と", "GivenAnswer": "を" },
     { "Question": "きょうは ___ です。", "CorrectAnswer": "げつようび", "GivenAnswer": "げつようび" },
-    { "Question": "みず ___ のみます。", "CorrectAnswer": "を", "GivenAnswer": "I don't know" }
+    { "Question": "みず ___ のみます。", "CorrectAnswer": "を", "GivenAnswer": "unknown" }
   ]
 }
