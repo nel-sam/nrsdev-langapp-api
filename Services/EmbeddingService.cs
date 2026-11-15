@@ -25,7 +25,7 @@ public class EmbeddingService: IEmbeddingService
         return result.Value.ToFloats().ToArray();
     }
 
-    static float CosineSimilarity(float[] a, float[] b)
+    public static float CosineSimilarity(float[] a, float[] b)
     {
         float dotProduct = 0, magA = 0, magB = 0;
 

@@ -1,3 +1,4 @@
+using Data;
 using Interfaces;
 using Microsoft.Extensions.AI;
 using Models;
@@ -11,7 +12,8 @@ public class AnalysisService(IChatClient chat) : IAnalysisService
         string targetLanguage,
         string level,
         string nativeLanguage,
-        List<QuestionResult> userResponses,
+        IEnumerable<QuestionResult> userResponses,
+        IEnumerable<SessionEmbeddingSimilarities> similarHistory,
         CancellationToken ct = default)
     {
         if (targetLanguage == "EN")

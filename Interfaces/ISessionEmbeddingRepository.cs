@@ -4,7 +4,7 @@ namespace Interfaces;
 
 public interface ISessionEmbeddingRepository
 {
-    Task SaveAsync(List<SessionEmbedding> sessionEmbeddings);
+    Task SaveAsync(IEnumerable<SessionEmbedding> sessionEmbeddings);
 
-    Task<IEnumerable<float[]>> Get();
+    Task<IEnumerable<SessionEmbedding>> GetAllForUserAsync(string userName);
 }

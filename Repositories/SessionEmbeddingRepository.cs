@@ -6,7 +6,7 @@ using Models;
 
 public class SessionEmbeddingRepository(IDbConnectionFactory factory) : ISessionEmbeddingRepository
 {
-    public async Task SaveAsync(List<SessionEmbedding> sessionEmbeddings)
+    public async Task SaveAsync(IEnumerable<SessionEmbedding> sessionEmbeddings)
     {
         using var connection = factory.CreateConnection();
         using var transaction = connection.BeginTransaction();
@@ -23,8 +23,17 @@ public class SessionEmbeddingRepository(IDbConnectionFactory factory) : ISession
         transaction.Commit();
     }
 
-    public Task<IEnumerable<float[]>> Get()
+    public async Task<IEnumerable<SessionEmbedding>> GetAllForUserAsync(string userName)
     {
-        throw new NotImplementedException();
+        using var connection = factory.CreateConnection();
+
+        return await connection.QueryAsync<SessionEmbedding>(
+           """
+            SELECT UserName, Summary, Embedding, CreatedAt
+            FROM session_embeddings
+            WHERE UserName = @UserName
+            """,
+           new { UserName = userName }
+       );
     }
 }

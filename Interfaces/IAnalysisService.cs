@@ -1,3 +1,4 @@
+using Data;
 using Models;
 
 namespace Interfaces;
@@ -8,6 +9,7 @@ public interface IAnalysisService
         string targetLanguage,
         string level,
         string nativeLanguage,
-        List<QuestionResult> userResponses,
+        IEnumerable<QuestionResult> userResponses,
+        IEnumerable<SessionEmbeddingSimilarities> similarHistory,
         CancellationToken ct = default);
 }
