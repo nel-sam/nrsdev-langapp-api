@@ -45,7 +45,7 @@
   {"question":"晩ごはん(ばんごはん)を ___ から、テレビを 見ます(みます)。","tested-abilities":["sequence-expressions","verbs"],"correct-answer-index":4,"choices":["食べます(たべます)","食べる(たべる)","食べた(たべた)","食べない(たべない)","食べて(たべて)","unknown"]},
   {"question":"一緒(いっしょ)に 公園(こうえん)へ ___ ませんか。","tested-abilities":["inviting","movement-verbs"],"correct-answer-index":1,"choices":["いきます","いき","いった","いって","いかない","unknown"]},
   {"question":"では、ここで やすみ ___。","tested-abilities":["volitional-form","daily-life"],"correct-answer-index":3,"choices":["ます","ました","ません","ましょう","たいです","unknown"]},
-  {"question":"この 本(ほん)を 読んで(よんで) ___。","tested-abilities":["requests","verbs"],"correct-answer-index":0,"choices":["ください","います","あります","です","でした","unknown"]},
+  {"question":"この 本(ほん)を 読んで(よんで) ___。","tested-abilities":["requests","verbs"],"correct-answer-index":0,"choices":["ください","ちょうだい","あります","です","でした","unknown"]},
   {"question":"本(ほん)を 借りても(かりても) ___ ですか。—はい、どうぞ。","tested-abilities":["asking-permission","basic-grammar"],"correct-answer-index":2,"choices":["だめ","いけない","いい","ください","しましょう","unknown"]},
   {"question":"昨日(きのう)は ___ です。","tested-abilities":["i-adjectives","past-tense"],"correct-answer-index":4,"choices":["暑い(あつい)","暑く(あつく)","暑さ(あつさ)","暑くて(あつくて)","暑かった(あつかった)","unknown"]},
   {"question":"この 町(まち)は しずか ___。","tested-abilities":["na-adjectives","basic-grammar"],"correct-answer-index":1,"choices":["な","です","く","かった","に","unknown"]},

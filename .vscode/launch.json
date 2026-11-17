@@ -8,7 +8,7 @@
             "name": "C#: nrsdev-langapp-api Debug",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/nrsdev-langapp-api.csproj"
+            "projectPath": "${workspaceFolder}/nrsdev-langapp-api/nrsdev-langapp-api.csproj"
         }
 
     ]

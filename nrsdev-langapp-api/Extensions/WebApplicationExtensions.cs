@@ -14,9 +14,9 @@ public static class WebApplicationExtensions
             CREATE TABLE IF NOT EXISTS session_embeddings (
             Id INTEGER PRIMARY KEY,
             UserName NVARCHAR(200) NOT NULL,
-            Summary TEXT NOT NULL,
+            Summary TEXT NOT NULL UNIQUE,
             CreatedAt TEXT NOT NULL DEFAULT (datetime('now')),
-            Embedding TEXT NOT NULL  -- the 1536 floats as JSON
+            Embedding TEXT NOT NULL
             ); 
             """);
     }

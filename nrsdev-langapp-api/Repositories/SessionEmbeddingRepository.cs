@@ -2,6 +2,7 @@ using System.Text.Json;
 using Dapper;
 using Data;
 using Interfaces;
+using Microsoft.Data.Sqlite;
 using Models;
 
 public class SessionEmbeddingRepository(IDbConnectionFactory factory) : ISessionEmbeddingRepository
@@ -11,16 +12,24 @@ public class SessionEmbeddingRepository(IDbConnectionFactory factory) : ISession
         using var connection = factory.CreateConnection();
         using var transaction = connection.BeginTransaction();
 
-        await connection.ExecuteAsync(
+        try
+        {
+            await connection.ExecuteAsync(
             """
             INSERT INTO session_embeddings (UserName, Summary, CreatedAt, Embedding)
             VALUES (@UserName, @Summary, @CreatedAt, @Embedding)
             """,
-            sessionEmbeddings,
-            transaction
-        );
+                sessionEmbeddings,
+                transaction
+            );
 
-        transaction.Commit();
+            transaction.Commit();
+        }
+        catch (SqliteException ex) when (ex.SqliteErrorCode == 19) // 19 is unique key exception
+        {
+            // TODO: Retries can trigger this exception. Ignore for now but this should
+            // be addressed better
+        }
     }
 
     public async Task<IEnumerable<SessionEmbedding>> GetAllForUserAsync(string userName)

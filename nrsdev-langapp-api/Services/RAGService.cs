@@ -43,11 +43,11 @@ public class RAGService(IEmbeddingService embeddingService, ISessionEmbeddingRep
         var sessionEmbeddings = await sessionEmbeddingRepository.GetAllForUserAsync(userName);
         var nearbySessionEmbeddings = new List<SessionEmbeddingSimilarities>();
 
-        foreach (var qrSummary in qrSummaries)
+        foreach (var currentSummary in qrSummaries)
         {
-            var qrSummaryEmbedding = sessionEmbeddings.SingleOrDefault(se => se.Summary == qrSummary);
+            var currentEmbedding = await embeddingService.EmbedAsync(currentSummary);
 
-            if (qrSummaryEmbedding == null)
+            if (currentEmbedding == null)
             {
                 throw new InvalidOperationException("Summary embedding not found");
             }
@@ -61,28 +61,22 @@ public class RAGService(IEmbeddingService embeddingService, ISessionEmbeddingRep
                     break;
                 }
 
-                if (qrSummary == se.Summary)
-                {
-                    continue;
-                }
-
-                var qrSummaryEmbeddingArr = JsonSerializer.Deserialize<float[]>(qrSummaryEmbedding.Embedding);
-
                 // TODO: move this into a Select() on the GetAllForUserAsync call for improved performance
                 var seEmbeddingArr = JsonSerializer.Deserialize<float[]>(se.Embedding);
 
-                if (qrSummaryEmbeddingArr == null || seEmbeddingArr == null)
+                if (seEmbeddingArr == null)
                 {
                     throw new InvalidOperationException("Error deserializing embeddings");
                 }
 
-                if (EmbeddingService.CosineSimilarity(qrSummaryEmbeddingArr, seEmbeddingArr) > 0.9)
+                if (EmbeddingService.CosineSimilarity(currentEmbedding, seEmbeddingArr) > 0.9)
                 {
                     similarToCurrent.Add(se);
                 }
             }
 
-            nearbySessionEmbeddings.Add(new SessionEmbeddingSimilarities(qrSummaryEmbedding, similarToCurrent));
+            var newSE = new SessionEmbedding(userName, currentSummary, JsonSerializer.Serialize(currentEmbedding), DateTime.Now);
+            nearbySessionEmbeddings.Add(new SessionEmbeddingSimilarities(newSE, similarToCurrent));
         }
 
         return nearbySessionEmbeddings;

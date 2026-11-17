@@ -45,18 +45,13 @@ public class AnalysisService(IChatClient chat) : IAnalysisService
             {string.Join("\n---\n", userResponses)}
             """;
 
-        var response = await chat.GetResponseAsync(
-            [new ChatMessage(ChatRole.System, prompt)],
-            new ChatOptions
-            {
-                ResponseFormat = ChatResponseFormat.ForJsonSchema(typeof(AnalysisResult))
-            },
-            ct);
+        var response = await chat.GetResponseAsync([new ChatMessage(ChatRole.System, prompt)], null, ct);
 
-        return JsonSerializer.Deserialize<AnalysisResult>(
-            response.Text,
-            new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
-            ?? throw new InvalidOperationException("Empty analysis from LLM");
+        if (response == null)
+        {
+            throw new InvalidOperationException("Empty analysis from LLM");
+        }
 
+        return new AnalysisResult(response.Text);
     }
 }

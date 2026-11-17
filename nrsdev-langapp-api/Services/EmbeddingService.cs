@@ -3,6 +3,7 @@ using OpenAI.Embeddings;
 using Azure.Identity;
 using Azure.AI.OpenAI;
 using Interfaces;
+using System.ClientModel;
 
 namespace Services;
 
@@ -14,8 +15,9 @@ public class EmbeddingService: IEmbeddingService
     {
         var endpoint = config["Embedding:Endpoint"] ?? throw new InvalidOperationException("Embedding:Endpoint missing");
         var deployment = config["Embedding:Model"] ?? throw new InvalidOperationException("Embedding:Model missing");
+        var apiKey = config["Embedding:ApiKey"] ?? throw new InvalidOperationException("Embedding:ApiKey missing");
 
-        _client = new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
+        _client = new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(apiKey))
             .GetEmbeddingClient(deployment);
     }
 
